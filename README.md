@@ -25,3 +25,13 @@ Auto-updates: `/plugin marketplace update mulkatz`
 | ------ | ----------- | ---- |
 | [Anvil](https://github.com/mulkatz/anvil) | Adversarial thinking through structured debates | [mulkatz/anvil](https://github.com/mulkatz/anvil) |
 | [Spark](https://github.com/mulkatz/spark) | Collaborative ideation through multi-persona brainstorming | [mulkatz/spark](https://github.com/mulkatz/spark) |
+
+## Maintenance
+
+Plugin files are synced from their source repos. After updating a plugin:
+
+```bash
+./sync.sh          # sync all plugins
+./sync.sh spark    # sync one plugin
+git add -A && git commit -m "sync: update plugins" && git push
+```

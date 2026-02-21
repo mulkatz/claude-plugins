@@ -1,0 +1,9 @@
+{
+  "name": "anvil",
+  "version": "2.0.0",
+  "description": "Adversarial thinking through structured debates. Stress-test ideas with configurable modes, decision frameworks, code-aware context, custom personas, and interactive steering.",
+  "author": {
+    "name": "Franz",
+    "email": "franz@franz.cx"
+  }
+}
