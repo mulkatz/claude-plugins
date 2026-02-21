@@ -1,37 +1,70 @@
-# Claude Code Plugins by Franz
+<h1 align="center">mulkatz plugins</h1>
 
-Marketplace for my Claude Code plugins.
+<p align="center">
+  <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> plugin marketplace by <a href="https://github.com/mulkatz">Franz</a>
+</p>
 
-## Installation
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-marketplace-blueviolet?style=flat-square" alt="Claude Code Marketplace">
+  <img src="https://img.shields.io/badge/plugins-2-blue?style=flat-square" alt="2 plugins">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="MIT License"></a>
+</p>
 
-In Claude Code, run:
+## Quick Start
 
 ```
 /plugin marketplace add mulkatz/claude-plugins
 ```
 
-Then install any plugin:
+Then install what you need:
 
 ```
 /plugin install anvil@mulkatz
 /plugin install spark@mulkatz
 ```
 
-Auto-updates: `/plugin marketplace update mulkatz`
+---
 
 ## Plugins
 
-| Plugin | Description | Repo |
-| ------ | ----------- | ---- |
-| [Anvil](https://github.com/mulkatz/anvil) | Adversarial thinking through structured debates | [mulkatz/anvil](https://github.com/mulkatz/anvil) |
-| [Spark](https://github.com/mulkatz/spark) | Collaborative ideation through multi-persona brainstorming | [mulkatz/spark](https://github.com/mulkatz/spark) |
+<table>
+<tr>
+<td width="80" align="center">
+<a href="https://github.com/mulkatz/anvil"><img src="https://raw.githubusercontent.com/mulkatz/anvil/main/assets/icon.png" width="48" alt="Anvil"></a>
+</td>
+<td>
+<h3><a href="https://github.com/mulkatz/anvil">Anvil</a></h3>
+<strong>Adversarial thinking through structured debates.</strong><br>
+Stress-test ideas by rotating through Advocate, Critic, and Synthesizer phases. Supports multiple debate modes (analyst, philosopher, devil's advocate, stakeholders), decision frameworks (ADR, pre-mortem, red-team), code-aware context, web research, custom personas, and interactive steering.
+<br><br>
+<code>/anvil:anvil "Should we migrate to microservices?"</code>
+</td>
+</tr>
+<tr>
+<td width="80" align="center">
+<a href="https://github.com/mulkatz/spark"><img src="https://raw.githubusercontent.com/mulkatz/spark/main/assets/icon.png" width="48" alt="Spark"></a>
+</td>
+<td>
+<h3><a href="https://github.com/mulkatz/spark">Spark</a></h3>
+<strong>Collaborative ideation through multi-persona brainstorming.</strong><br>
+Generate surprising ideas by rotating 3 AI personas through Seed, Cross-Pollinate, and Synthesize phases. Each persona brings a distinct worldview, vocabulary, and blind spots. Research-backed design with anti-convergence mechanisms.
+<br><br>
+<code>/spark "How can we reduce onboarding time for new developers?"</code>
+</td>
+</tr>
+</table>
 
-## Maintenance
+---
 
-Plugin files are synced from their source repos. After updating a plugin:
+## Managing Plugins
 
 ```bash
-./sync.sh          # sync all plugins
-./sync.sh spark    # sync one plugin
-git add -A && git commit -m "sync: update plugins" && git push
+# Update marketplace to get latest plugin versions
+/plugin marketplace update mulkatz
+
+# Remove a plugin
+/plugin uninstall anvil@mulkatz
+
+# Remove marketplace entirely
+/plugin marketplace remove mulkatz
 ```
