@@ -1,38 +1,29 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "mulkatz",
+  "description": "Claude Code plugins by Franz",
   "owner": {
     "name": "Franz",
     "email": "franz@franz.cx"
   },
-  "metadata": {
-    "description": "Franz's Claude Code plugins"
-  },
   "plugins": [
     {
       "name": "anvil",
-      "source": "./plugins/anvil",
       "description": "Adversarial thinking through structured debates. Stress-test ideas by rotating through Advocate, Critic, and Synthesizer phases with configurable debate modes.",
-      "version": "2.0.0",
-      "author": {
-        "name": "Franz",
-        "email": "franz@franz.cx"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mulkatz/anvil.git"
       },
-      "homepage": "https://github.com/mulkatz/anvil",
-      "license": "MIT",
-      "keywords": ["adversarial", "debate", "thinking", "analysis", "decision-making"]
+      "homepage": "https://github.com/mulkatz/anvil"
     },
     {
       "name": "spark",
-      "source": "./plugins/spark",
       "description": "Collaborative ideation through multi-persona brainstorming. Generate surprising ideas by rotating AI personas through Seed, Cross-Pollinate, and Synthesize phases.",
-      "version": "0.1.0",
-      "author": {
-        "name": "Franz",
-        "email": "franz@franz.cx"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mulkatz/spark.git"
       },
-      "homepage": "https://github.com/mulkatz/spark",
-      "license": "MIT",
-      "keywords": ["ideation", "brainstorming", "personas", "creativity", "innovation"]
+      "homepage": "https://github.com/mulkatz/spark"
     }
   ]
 }
