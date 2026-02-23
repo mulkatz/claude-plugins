@@ -1,7 +1,7 @@
 <h1 align="center">mulkatz plugins</h1>
 
 <p align="center">
-  <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> plugin marketplace by <a href="https://github.com/mulkatz">Franz</a>
+  <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> plugin marketplace by <a href="https://github.com/mulkatz">Franz Benthin</a>
 </p>
 
 <p align="center">
